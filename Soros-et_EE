@@ -55,9 +55,11 @@ __numbertext__
 
 # ühikud
 "1[ ]*%" üks protsent
-"(\d+)[ ]*%" $1 protsenti
+"(.+)[ ]*%" $1 protsenti
+"1[ ]*‰" üks promill
+"(.+)[ ]*‰" $1 promilli
 "§[ ]*(\d+)" paragrahv $1
-"^1[ ]*°[Cc]?" $1 Celsiuse kraad
-"(\d+)[ ]*°[Cc]?" $1 Celsiuse kraadi
-"1[ ]*°[Ff]" $1 Fahrenheiti kraad
-"(\d+)[ ]*°[Ff]" $1 Fahrenheiti kraadi
+"^1[ ]*°[Cc]?" üks Celsiuse kraad
+"(.+)[ ]*°[Cc]?" $1 Celsiuse kraadi
+"1[ ]*°[Ff]" üks Fahrenheiti kraad
+"(.+)[ ]*°[Ff]" $1 Fahrenheiti kraadi
