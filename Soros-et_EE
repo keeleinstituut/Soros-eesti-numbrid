@@ -52,3 +52,12 @@ __numbertext__
 ([-−]?\d+)[.,]00001	|$1| ja üks sajatuhandik
 ([-−]?\d+)[.,](\d\d\d\d\d)	|$1| ja |$2 sajatuhandikku
 "([-−]?\d+[.,]\d+)(\d)" $1 |$2|
+
+# ühikud
+"1[ ]*%" üks protsent
+"(\d+)[ ]*%" $1 protsenti
+"§[ ]*(\d+)" paragrahv $1
+"^1[ ]*°[Cc]?" $1 Celsiuse kraad
+"(\d+)[ ]*°[Cc]?" $1 Celsiuse kraadi
+"1[ ]*°[Ff]" $1 Fahrenheiti kraad
+"(\d+)[ ]*°[Ff]" $1 Fahrenheiti kraadi
