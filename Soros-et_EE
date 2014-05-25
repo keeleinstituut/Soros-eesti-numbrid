@@ -1,0 +1,54 @@
+__numbertext__
+^0 null
+1 üks
+2 kaks
+3 kolm
+4 neli
+5 viis
+6 kuus
+7 seitse
+8 kaheksa
+9 üheksa
+10 kümme
+1(\d) $1teistkümmend
+(\d)(\d) $1kümmend $2
+^1(\d\d) sada $1                  # sada kaheksa
+1(\d\d) ükssada $1                # tuhat ükssada
+(\d)(\d\d) $1sada $2
+^1(\d{3}) tuhat $1                # tuhat kolmsada
+1(\d{3}) ükstuhat $1              # miljon ükstuhat
+(\d)(\d{3}) $1tuhat $2
+(\d{2,3})(\d{3}) $1tuhat $2
+^1(\d{6}) miljon $1
+1(\d{6}) üksmiljon $1             # triljon üksmiljon
+(\d{1,3})(\d{6}) $1 miljonit $2
+1(\d{9}) miljard $1
+(\d{1,3})(\d{9}) $1 miljardit $2
+1(\d{12}) biljon $1
+(\d{1,3})(\d{12}) $1 biljonit $2
+1(\d{15}) tuhat biljonit $1
+(\d{1,3})(\d{15}) $1 tuhat biljonit $2
+1(\d{18}) triljon $1
+(\d{1,3})(\d{18}) $1 triljonit $2
+1(\d{21}) tuhat triljonit $1
+(\d{1,3})(\d{21}) $1 tuhat triljonit $2
+1(\d{24}) kvadriljon $1
+(\d{1,3})(\d{24}) $1 kvadriljonit $2
+
+# negative numbers
+
+[-−](\d+) miinus |$1
+
+# decimals
+
+([-−]?\d+)[.,]1	|$1| ja üks kümnendik
+([-−]?\d+)[.,](\d)	|$1| ja |$2 kümnendikku
+([-−]?\d+)[.,]01	|$1| ja üks sajandik
+([-−]?\d+)[.,](\d\d)	|$1| ja |$2 sajandikku
+([-−]?\d+)[.,]001	|$1| ja üks tuhandik         # või hoopis promill?
+([-−]?\d+)[.,](\d\d\d)	|$1| ja |$2 tuhandikku
+([-−]?\d+)[.,]0001	|$1| ja üks kümnetuhandik
+([-−]?\d+)[.,](\d\d\d\d)	|$1| ja |$2 kümnetuhandikku
+([-−]?\d+)[.,]00001	|$1| ja üks sajatuhandik
+([-−]?\d+)[.,](\d\d\d\d\d)	|$1| ja |$2 sajatuhandikku
+"([-−]?\d+[.,]\d+)(\d)" $1 |$2|
