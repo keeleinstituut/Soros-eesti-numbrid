@@ -59,7 +59,7 @@ __numbertext__
 "1[ ]*‰" üks promill
 "(.+)[ ]*‰" $1 promilli
 "§[ ]*(\d+)" paragrahv $1
-"^1[ ]*°[Cc]?" $1 Celsiuse kraad
+"^1[ ]*°[Cc]?" üks Celsiuse kraad
 "(.+)[ ]*°[Cc]?" $1 Celsiuse kraadi
-"1[ ]*°[Ff]" $1 Fahrenheiti kraad
+"1[ ]*°[Ff]" üks Fahrenheiti kraad
 "(.+)[ ]*°[Ff]" $1 Fahrenheiti kraadi
