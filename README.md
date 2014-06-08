@@ -10,13 +10,13 @@ EKIs on arendatud analoogse funktsionaalsusega rakendus Lingua::ET:Numbers.pm pr
 Näiteid
 =======
 
-123.4 kirjutatakse ümber "sada kakskümmend kolm ja neli kümnendikku"
-5% kirjutatakse ümber "viis protsenti"
-1‰ kirjutatakse ümber "üks promill"
-35° kirjutatakse ümber "kolmkümmend viis Celsiuse kraadi"
-35°f kirjutatakse ümber "kolmkümmend viis Fahrenheiti kraadi"
+* ```123.4``` kirjutatakse ümber ```sada kakskümmend kolm ja neli kümnendikku```
+* ```5%``` kirjutatakse ümber ```viis protsenti```
+* ```1‰``` kirjutatakse ümber ```üks promill```
+* ```35°``` kirjutatakse ümber ```kolmkümmend viis Celsiuse kraadi```
+* ```35°f``` kirjutatakse ümber ```kolmkümmend viis Fahrenheiti kraadi```
 
 Litsents
 ========
 
-Soros reeglifailid on nii LGPL kui ka BSD litsentsiga.
+Soros teisendamisreeglistikud on paralleelse litsentsiga, nii LGPL kui ka BSD.
